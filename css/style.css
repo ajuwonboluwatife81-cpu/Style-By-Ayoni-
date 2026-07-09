@@ -1,0 +1,1004 @@
+:root {
+  --plum: #7a0f52;
+  --deep-plum: #4b0632;
+  --gold: #c8a24a;
+  --ivory: #faf7f4;
+  --text: #231f20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--ivory);
+  color: var(--text);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(75, 6, 50, 0.92);
+  z-index: 10;
+}
+
+.logo {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(75, 6, 50, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: white;
+  font-size: 72px;
+  max-width: 850px;
+}
+
+.overlay p {
+  color: #f4d7e5;
+  font-size: 22px;
+  margin: 18px 0 35px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--plum);
+  color: white;
+  padding: 15px 34px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid var(--gold);
+}
+
+.btn:hover {
+  background: var(--gold);
+  color: var(--deep-plum);
+}
+
+section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--plum);
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.cards {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 70px 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(122, 15, 82, 0.12);
+  border-bottom: 4px solid var(--plum);
+}
+
+.card h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--deep-plum);
+  font-size: 30px;
+}
+
+footer {
+  background: var(--deep-plum);
+  color: white;
+  text-align: center;
+  padding: 28px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .overlay h1 {
+    font-size: 44px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    padding: 20px;
+    text-align: center;
+}
+/* Social Media Section */
+
+#social {
+    padding: 80px 10%;
+    text-align: center;
+    background: #faf7f8;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.social-links a {
+    background: #6a0d45;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #8c145f;
+    transform: translateY(-5px);
+}
+/* Social Media */
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.social-links a{
+    width:70px;
+    height:70px;
+    background:#6b0f47;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:32px;
+    transition:0.3s ease;
+}
+
+.social-links a:hover{
+    transform:translateY(-8px) scale(1.1);
+    background:#8a155f;
+}
+/* Modest Collection Gallery Fix */
+
+.collection-gallery {
+    padding: 60px 8%;
+    text-align: center;
+    background: #faf7f5;
+}
+
+.collection-gallery h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    color: #6b0f47;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-item h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    color: #6b0f47;
+    text-align: center;
+    margin: 15px 10px;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+/* ANKARA WITH LACE TOPPING HOVER */
+
+.swap-photo {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.swap-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.6s ease;
+}
+
+.swap-photo .front-photo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.swap-photo .back-photo {
+    opacity: 0;
+    z-index: 2;
+}
+
+.swap-photo:hover .front-photo {
+    opacity: 0;
+}
+
+.swap-photo:hover .back-photo {
+    opacity: 1;
+}
+/* Professional Dropdown Fix */
+
+nav ul {
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: #6b0f47;
+    width: 230px;
+    padding: 10px 0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* PROFESSIONAL CLICKABLE COLLECTION DROPDOWN */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: #6b0f47;
+    width: 230px;
+
+    padding: 8px 0;
+    margin: 0;
+
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    z-index: 9999;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+
+    padding: 12px 20px;
+
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #8c145f;
+}
+/* COLLECTION PAGE TITLE SPACING FIX */
+
+.collection-gallery {
+    padding: 70px 20px 60px;
+    text-align: center;
+    background: #faf7f5;
+}
+
+.collection-gallery h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    color: #6b0f47;
+    margin-top: 0;
+    margin-bottom: 45px;
+    line-height: 1.2;
+}
+/* COLLECTION PAGE PROFESSIONAL TITLE */
+
+.collection-gallery {
+    padding-top: 110px;
+}
+
+.collection-gallery h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    color: #6b0f47;
+
+    margin-top: 0;
+    margin-bottom: 55px;
+
+    line-height: 1.2;
+    text-align: center;
+
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 12px;
+}
+/* CLIENT GALLERY */
+
+.client-gallery {
+    padding: 90px 40px 70px;
+    text-align: center;
+    background: #faf7f5;
+    min-height: 100vh;
+}
+
+.client-gallery h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    color: #6b0f47;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+.gallery-intro {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.client-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.client-card {
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-8px);
+}
+
+.client-card img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.client-card:hover img {
+    transform: scale(1.05);
+}
+
+.client-card h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    color: #6b0f47;
+    margin: 18px 10px;
+}
+
+
+/* CLIENT GALLERY MOBILE */
+
+@media (max-width: 900px) {
+
+    .client-gallery {
+        padding: 100px 20px 60px;
+    }
+
+    .client-gallery h1 {
+        font-size: 38px;
+    }
+
+    .client-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .client-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .client-card img {
+        height: 500px;
+    }
+
+}
+/* NAVBAR SPACING FIX */
+
+nav {
+    padding: 22px 8%;
+}
+
+nav ul {
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+}
+/* FINAL NAV GAP FIX */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px !important;
+}
+
+nav ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+nav ul li a {
+    padding: 8px 6px !important;
+    white-space: nowrap;
+}
+/* EQUAL NAVBAR SPACING */
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px !important;
+}
+
+nav > ul > li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    white-space: nowrap;
+}
+/* CLIENT GALLERY PHOTO HOVER */
+
+.swap-photo {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.swap-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.6s ease;
+}
+
+.front-photo {
+    opacity: 1;
+}
+
+.back-photo {
+    opacity: 0;
+}
+
+.swap-photo:hover .front-photo {
+    opacity: 0;
+}
+
+.swap-photo:hover .back-photo {
+    opacity: 1;
+}
+/* CLIENT GALLERY - 4 PICTURES PER ROW */
+
+.gallery-category .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.gallery-category .gallery-item {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.gallery-category .gallery-item > img,
+.gallery-category .swap-photo {
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery-category .gallery-item > img {
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.gallery-category .swap-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .gallery-category .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .gallery-category .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+}
+/* CLIENT GALLERY - FORCE 4 PICTURES PER ROW */
+
+.gallery-category .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 1500px !important;
+    margin: 0 auto !important;
+    padding: 20px 40px !important;
+    box-sizing: border-box;
+}
+
+.gallery-category .gallery-item {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    box-sizing: border-box;
+}
+
+.gallery-category .gallery-item > img,
+.gallery-category .swap-photo {
+    width: 100% !important;
+    height: 400px !important;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery-category .gallery-item > img {
+    object-fit: cover !important;
+    object-position: top !important;
+}
+
+.gallery-category .swap-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top !important;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .gallery-category .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .gallery-category .gallery {
+        grid-template-columns: 1fr !important;
+        padding: 20px !important;
+    }
+
+}
+/* DRESSES / GOWNS - 4 PICTURES PER ROW */
+
+.client-gallery .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.client-gallery .gallery-item {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.client-gallery .gallery-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 10px;
+}
+
+.client-gallery .swap-photo {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.client-gallery .swap-photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.6s ease;
+}
+
+.client-gallery .front-photo {
+    opacity: 1;
+}
+
+.client-gallery .back-photo {
+    opacity: 0;
+}
+
+.client-gallery .swap-photo:hover .front-photo {
+    opacity: 0;
+}
+
+.client-gallery .swap-photo:hover .back-photo {
+    opacity: 1;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .client-gallery .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .client-gallery .gallery {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+
+    .client-gallery .gallery-item img,
+    .client-gallery .swap-photo {
+        height: 500px;
+    }
+}
+/* BIGGER CLIENT GALLERY CATEGORY BOXES */
+
+.client-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    width: 88%;
+    max-width: 1500px;
+    margin: 30px auto;
+}
+
+.client-gallery-grid .client-card {
+    min-height: 150px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.client-gallery-grid .client-card h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+/* SPACE ABOVE BACK TO CLIENT GALLERY BUTTON */
+
+.client-gallery .btn {
+    display: block;
+    width: fit-content;
+    margin: 60px auto 40px;
+}
+/* THREE PHOTO HOVER - TWO PIECE SET */
+
+.three-photo-hover {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.three-photo-hover img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.5s ease;
+}
+
+.three-photo-hover .photo-main {
+    left: 0;
+    opacity: 1;
+}
+
+.three-photo-hover .photo-left {
+    left: 0;
+    opacity: 0;
+}
+
+.three-photo-hover .photo-right {
+    left: 0;
+    opacity: 0;
+}
+
+/* HOVER LEFT HALF = PHOTO 1 */
+
+.three-photo-hover:hover .photo-main {
+    opacity: 0;
+}
+
+.three-photo-hover:hover .photo-left {
+    opacity: 1;
+}
+
+.three-photo-hover:hover .photo-right {
+    opacity: 0;
+}
+/* THREE PHOTO HOVER - TWO PIECE SET */
+
+.three-photo-hover {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.three-photo-hover img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.photo-main {
+    opacity: 1;
+}
+
+.photo-left,
+.photo-right {
+    opacity: 0;
+}
+
+.three-photo-hover:hover .photo-main {
+    opacity: 0;
+}
+
+.three-photo-hover:hover .photo-left {
+    animation: showPhoto1 3s infinite;
+}
+
+.three-photo-hover:hover .photo-right {
+    animation: showPhoto3 3s infinite;
+}
+
+@keyframes showPhoto1 {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@keyframes showPhoto3 {
+    0%, 49% { opacity: 0; }
+    50%, 100% { opacity: 1; }
+}
