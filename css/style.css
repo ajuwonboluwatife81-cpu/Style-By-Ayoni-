@@ -1220,3 +1220,15 @@ nav > ul > li > a {
     color: #72004f;
     background: #ffffff;
 }
+/* Make Custom Designs title match other gallery pages */
+
+.custom-designs .gallery-item h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #72004f;
+    text-align: center;
+    margin: 15px 0 20px;
+    padding: 0;
+    line-height: 1.3;
+}
