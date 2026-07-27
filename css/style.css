@@ -1125,3 +1125,28 @@ nav > ul > li > a {
     object-fit: cover;
     border-radius: 12px;
 }
+/* Fix image spacing in gallery */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.swap-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
