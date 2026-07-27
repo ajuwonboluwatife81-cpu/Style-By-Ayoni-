@@ -1002,3 +1002,102 @@ nav > ul > li > a {
     0%, 49% { opacity: 0; }
     50%, 100% { opacity: 1; }
 }
+/* ================================
+   PROFESSIONAL HERO SECTION UPDATE
+================================ */
+
+.hero {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.hero .overlay {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero .overlay h1 {
+    max-width: 850px;
+    margin: 0 auto 24px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: 1px;
+
+    color: #ffffff;
+}
+
+.hero .overlay p {
+    max-width: 700px;
+    margin: 0 auto 36px;
+
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    line-height: 1.7;
+    font-weight: 400;
+
+    color: #f7eef4;
+}
+
+.hero .overlay .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 250px;
+    padding: 16px 34px;
+
+    border: 2px solid #d7b23b;
+    border-radius: 8px;
+
+    background: #8b005d;
+    color: #ffffff;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.hero .overlay .btn:hover {
+    background: #650044;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+}
+
+/* Mobile adjustment */
+@media (max-width: 700px) {
+    .hero {
+        min-height: 75vh;
+        padding: 60px 18px;
+    }
+
+    .hero .overlay {
+        padding: 30px 15px;
+    }
+
+    .hero .overlay .btn {
+        min-width: 220px;
+        padding: 14px 26px;
+    }
+}
