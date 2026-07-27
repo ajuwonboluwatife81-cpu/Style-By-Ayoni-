@@ -1204,3 +1204,19 @@ nav > ul > li > a {
     line-height: 1.2;
     background: #ffffff;
 }
+/* CUSTOM DESIGN TITLE STYLE */
+
+.custom-designs .gallery-item h2,
+.client-gallery .gallery-item h2 {
+    margin: 0;
+    padding: 18px 12px 24px;
+    text-align: center;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: #72004f;
+    background: #ffffff;
+}
