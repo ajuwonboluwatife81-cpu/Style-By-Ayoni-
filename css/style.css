@@ -115,20 +115,53 @@ section p {
   line-height: 1.8;
 }
 
+ 
 .cards {
-  margin-top: 45px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .card {
-  background: white;
-  padding: 70px 25px;
-  border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(122, 15, 82, 0.12);
-  border-bottom: 4px solid var(--plum);
+    background: white;
+    padding: 25px;
+    min-width: 0;
+    box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(122, 15, 82, 0.12);
+    border-bottom: 4px solid var(--plum);
 }
+
+/* Tablet and iPad */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 25px;
+        padding: 0 12px;
+    }
+
+    .card {
+        padding: 12px;
+        border-radius: 14px;
+    }
+}
+
 
 .card h3 {
   font-family: "Cormorant Garamond", serif;
